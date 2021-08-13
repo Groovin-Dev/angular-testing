@@ -1,0 +1,17 @@
+<div class="container">
+	<h1 mat-dialog-title>Login</h1>
+	<div mat-dialog-content class="login-form">
+		<mat-form-field appearance="standard">
+			<mat-label>Email</mat-label>
+			<input matInput [(ngModel)]="data.email" autocomplete="off" />
+		</mat-form-field>
+		<mat-form-field appearance="standard">
+			<mat-label>Password</mat-label>
+			<input matInput [(ngModel)]="data.password" autocomplete="off" type="password" />
+		</mat-form-field>
+	</div>
+	<div mat-dialog-actions>
+		<button mat-button (click)="onNoClick()">Cancel</button>
+		<button mat-button (click)="onLoginClick()" cdkFocusInitial>Login</button>
+	</div>
+</div>
